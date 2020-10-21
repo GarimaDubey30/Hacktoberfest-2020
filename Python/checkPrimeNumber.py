@@ -1,14 +1,11 @@
 # check wheather no. is prime or not
 
-num = 140
-
-if num > 1:
-
-	for i in range (2,int(num** 0.5)+1):
-
-		if (num % i) == 0:
-			print(num, " Is Not a prime Number")
-			print(num ,"is divisible by ", num//i)
-			break
-	else:
-		print(num, 'is a prime number')
+n = 140
+list=[]
+for i in range(1,n+1):
+	if n%i==0:
+		list.append(i)
+if(len(list))==2):
+	print(n, 'is a prime number')
+else:
+	print(n, 'is not a prime number')
